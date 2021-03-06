@@ -999,7 +999,7 @@ Wire Wire Line
 Wire Wire Line
 	18250 2300 18250 900 
 Wire Wire Line
-	18250 900  17850 900 
+	18250 900  18000 900 
 Connection ~ 17850 900 
 Connection ~ 18250 900 
 $Comp
@@ -4569,4 +4569,22 @@ Text Notes 15750 3950 0    50   ~ 0
 RS485
 Text Notes 21600 9200 0    50   ~ 0
 2X PWM Push-Pull
+Text GLabel 18300 650  2    50   Input ~ 0
+VBUS
+$Comp
+L Device:D_Schottky D?
+U 1 1 60E97C77
+P 18150 650
+F 0 "D?" H 18150 433 50  0000 C CNN
+F 1 "D_Schottky" H 18150 524 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 18150 650 50  0001 C CNN
+F 3 "~" H 18150 650 50  0001 C CNN
+	1    18150 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18000 650  18000 900 
+Connection ~ 18000 900 
+Wire Wire Line
+	18000 900  17850 900 
 $EndSCHEMATC
